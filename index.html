@@ -3,100 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias Deportivas</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Página de Deportes</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">Deportes<span>Hoy</span></div>
-        <p>Las últimas noticias del mundo deportivo</p>
+        <div class="logo">
+            <h1>Deportes<span>Total</span></h1>
+            <p>El mejor sitio de noticias deportivas</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Fútbol</a></li>
+                <li><a href="#">Básquet</a></li>
+                <li><a href="#">Tenis</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#">Fútbol</a></li>
-            <li><a href="#">Básquetbol</a></li>
-            <li><a href="#">Tenis</a></li>
-            <li><a href="#">Atletismo</a></li>
-            <li><a href="#">Más deportes</a></li>
-        </ul>
-    </nav>
-    
-    <div class="container">
-    
-        <article class="featured-news">
-            <img src="https://via.placeholder.com/1200x400" alt="Partido de fútbol" class="featured-img">
-            <div class="featured-content">
-                <h2>El clásico nacional termina en empate dramático</h2>
-                <p>El encuentro más esperado de la temporada culminó con un emocionante 2-2 en el marcador, con goles en los minutos finales de ambos equipos. Los aficionados no pudieron pedir más emoción en este duelo lleno de alternativas.</p>
-                <a href="#" class="read-more">Leer más</a>
+
+    <main>
+        <section class="destacado">
+            <article>
+                <img src="https://via.placeholder.com/800x400" alt="Partido destacado">
+                <div class="contenido">
+                    <h2>El clásico terminó en empate</h2>
+                    <p>El partido más esperado de la temporada finalizó 2-2 con goles en los minutos finales...</p>
+                    <a href="#" class="btn">Leer más</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="noticias">
+            <h2>Últimas Noticias</h2>
+            <div class="grid-noticias">
+                <!-- Noticia 1 -->
+                <article class="tarjeta">
+                    <img src="https://via.placeholder.com/400x200" alt="Noticia 1">
+                    <div class="info">
+                        <h3>Título noticia 1</h3>
+                        <p>Resumen corto de la noticia...</p>
+                        <a href="#" class="btn">Ver más</a>
+                    </div>
+                </article>
+                
+                <!-- Noticia 2 -->
+                <article class="tarjeta">
+                    <img src="https://via.placeholder.com/400x200" alt="Noticia 2">
+                    <div class="info">
+                        <h3>Título noticia 2</h3>
+                        <p>Resumen corto de la noticia...</p>
+                        <a href="#" class="btn">Ver más</a>
+                    </div>
+                </article>
+                
+                <!-- Noticia 3 -->
+                <article class="tarjeta">
+                    <img src="https://via.placeholder.com/400x200" alt="Noticia 3">
+                    <div class="info">
+                        <h3>Título noticia 3</h3>
+                        <p>Resumen corto de la noticia...</p>
+                        <a href="#" class="btn">Ver más</a>
+                    </div>
+                </article>
             </div>
-        </article>
-        
-        <div class="news-grid">
-            <article class="news-card">
-                <img src="https://via.placeholder.com/600x200" alt="Jugador de básquet" class="news-img">
-                <div class="news-content">
-                    <h3>El equipo local avanza a semifinales</h3>
-                    <p>Con una gran actuación colectiva, el equipo de básquetbol local logró su pase a las semifinales del torneo nacional.</p>
-                    <a href="#" class="read-more">Leer más</a>
-                </div>
-            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-seccion">
+                <h3>Sobre Nosotros</h3>
+                <p>DeportesTotal es el portal líder en noticias deportivas desde 2010.</p>
+            </div>
             
-            <article class="news-card">
-                <img src="https://via.placeholder.com/600x200" alt="Tenis" class="news-img">
-                <div class="news-content">
-                    <h3>Nueva estrella del tenis gana su primer Grand Slam</h3>
-                    <p>La joven promesa del tenis nacional sorprendió al vencer en tres sets al favorito del torneo, consiguiendo así su primer título importante.</p>
-                    <a href="#" class="read-more">Leer más</a>
-                </div>
-            </article>
+            <div class="footer-seccion">
+                <h3>Contacto</h3>
+                <p>Email: info@deportestotal.com</p>
+                <p>Teléfono: +123 456 789</p>
+            </div>
             
-            <article class="news-card">
-                <img src="https://via.placeholder.com/600x200" alt="Atletismo" class="news-img">
-                <div class="news-content">
-                    <h3>Récord nacional en los 100 metros planos</h3>
-                    <p>El atleta nacional rompió su propio récord en la prueba reina del atletismo, marcando un tiempo histórico para el país.</p>
-                    <a href="#" class="read-more">Leer más</a>
+            <div class="footer-seccion">
+                <h3>Redes Sociales</h3>
+                <div class="sociales">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
-            </article>
-            
-            <article class="news-card">
-                <img src="https://via.placeholder.com/600x200" alt="Natación" class="news-img">
-                <div class="news-content">
-                    <h3>Equipo de natación logra 5 medallas en torneo internacional</h3>
-                    <p>Nuestros nadadores demostraron su calidad obteniendo dos oros, una plata y dos bronces en el campeonato continental.</p>
-                    <a href="#" class="read-more">Leer más</a>
-                </div>
-            </article>
+            </div>
         </div>
         
-        <aside class="sidebar">
-            <h3>Próximos Eventos</h3>
-            <div class="sidebar-news">
-                <h4>Final de la Copa Nacional</h4>
-                <p>Sábado 15 de junio - 20:00 hrs</p>
-            </div>
-            <div class="sidebar-news">
-                <h4>Maratón Internacional</h4>
-                <p>Domingo 23 de junio - 08:00 hrs</p>
-            </div>
-            <div class="sidebar-news">
-                <h4>Juegos Olímpicos</h4>
-                <p>26 de julio - 11 de agosto</p>
-            </div>
-            
-            <h3>Resultados Recientes</h3>
-            <div class="sidebar-news">
-                <h4>Fútbol: Local 3 - 1 Visitante</h4>
-            </div>
-            <div class="sidebar-news">
-                <h4>Básquetbol: Local 89 - 85 Visitante</h4>
-            </div>
-            <div class="sidebar-news">
-                <h4>Tenis: Nacional avanza a cuartos</h4>
-            </div>
-        </aside>
-    </div>
+        <div class="footer-copyright">
+            <p>&copy; 2023 DeportesTotal. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome para iconos -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
