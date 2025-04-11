@@ -3,101 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Deportes</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>TotalSports - Noticias Deportivas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Deportes<span>Total</span></h1>
-            <p>El mejor sitio de noticias deportivas</p>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="TotalSports Logo" class="logo">
+                <div class="logo-text">
+                    <h1>TotalSports</h1>
+                    <p>El mundo del deporte en un solo lugar</p>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link active">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Fútbol <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Liga Local</a></li>
+                            <li><a href="#">Internacional</a></li>
+                            <li><a href="#">Champions League</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Básquet <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">NBA</a></li>
+                            <li><a href="#">Euroleague</a></li>
+                            <li><a href="#">Liga Local</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Tenis</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Atletismo</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Buscar noticias...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Fútbol</a></li>
-                <li><a href="#">Básquet</a></li>
-                <li><a href="#">Tenis</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main>
-        <section class="destacado">
-            <article>
-                <img src="https://via.placeholder.com/800x400" alt="Partido destacado">
-                <div class="contenido">
-                    <h2>El clásico terminó en empate</h2>
-                    <p>El partido más esperado de la temporada finalizó 2-2 con goles en los minutos finales...</p>
-                    <a href="#" class="btn">Leer más</a>
-                </div>
-            </article>
+    <main class="main-content">
+        <section class="breaking-news">
+            <div class="breaking-news-container">
+                <span class="breaking-tag">ÚLTIMO MOMENTO</span>
+                <p class="breaking-text">El equipo local clasifica a la final del torneo internacional tras victoria épica</p>
+            </div>
         </section>
 
-        <section class="noticias">
-            <h2>Últimas Noticias</h2>
-            <div class="grid-noticias">
-                <!-- Noticia 1 -->
-                <article class="tarjeta">
-                    <img src="https://via.placeholder.com/400x200" alt="Noticia 1">
-                    <div class="info">
-                        <h3>Título noticia 1</h3>
-                        <p>Resumen corto de la noticia...</p>
-                        <a href="#" class="btn">Ver más</a>
+        <section class="featured-news">
+            <article class="main-featured">
+                <div class="featured-image">
+                    <img src="images/featured1.jpg" alt="Partido de fútbol">
+                    <div class="image-overlay"></div>
+                    <div class="featured-category">Fútbol</div>
+                </div>
+                <div class="featured-content">
+                    <h2 class="featured-title">El clásico termina con polémica: análisis completo del partido</h2>
+                    <p class="featured-excerpt">El encuentro más esperado de la temporada dejó varias situaciones controvertidas que analizamos en detalle con los expertos.</p>
+                    <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <div class="secondary-featured">
+                <article class="secondary-news">
+                    <div class="news-image">
+                        <img src="images/news1.jpg" alt="Noticia secundaria 1">
+                        <div class="news-category">Básquet</div>
+                    </div>
+                    <div class="news-content">
+                        <h3>El jugador local es drafteado por la NBA</h3>
+                        <p>El joven talento se convierte en el primer jugador nacional en ser seleccionado en primera ronda del draft.</p>
+                        <a href="#" class="read-more">Ver detalles</a>
                     </div>
                 </article>
-                
-                <article class="tarjeta">
-                    <img src="https://via.placeholder.com/400x200" alt="Noticia 2">
-                    <div class="info">
-                        <h3>Título noticia 2</h3>
-                        <p>Resumen corto de la noticia...</p>
-                        <a href="#" class="btn">Ver más</a>
+
+                <article class="secondary-news">
+                    <div class="news-image">
+                        <img src="images/news2.jpg" alt="Noticia secundaria 2">
+                        <div class="news-category">Tenis</div>
+                    </div>
+                    <div class="news-content">
+                        <h3>Nueva estrella gana su primer Grand Slam</h3>
+                        <p>Con solo 19 años, la joven tenista sorprende al mundo del tenis con su victoria en Roland Garros.</p>
+                        <a href="#" class="read-more">Ver detalles</a>
                     </div>
                 </article>
-                
-                <article class="tarjeta">
-                    <img src="https://via.placeholder.com/400x200" alt="Noticia 3">
-                    <div class="info">
-                        <h3>Título noticia 3</h3>
-                        <p>Resumen corto de la noticia...</p>
-                        <a href="#" class="btn">Ver más</a>
+            </div>
+        </section>
+
+        <section class="news-section">
+            <h2 class="section-title">Últimas Noticias</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="card-image">
+                        <img src="images/card1.jpg" alt="Noticia 1">
+                        <div class="card-category">Atletismo</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Nuevo récord nacional en 100 metros</h3>
+                        <p class="card-date"><i class="far fa-clock"></i> Hace 2 horas</p>
+                        <p>El velocista supera su propia marca establecida el año pasado en los nacionales.</p>
+                        <a href="#" class="card-link">Leer completa</a>
                     </div>
                 </article>
+
+                <article class="news-card">
+                    <div class="card-image">
+                        <img src="images/card2.jpg" alt="Noticia 2">
+                        <div class="card-category">Fútbol</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>El delantero estrella se lesiona</h3>
+                        <p class="card-date"><i class="far fa-clock"></i> Hace 5 horas</p>
+                        <p>El jugador sufre rotura de ligamentos y estará fuera de las canchas por 6 meses.</p>
+                        <a href="#" class="card-link">Leer completa</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="card-image">
+                        <img src="images/card3.jpg" alt="Noticia 3">
+                        <div class="card-category">Básquet</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>El equipo local avanza a semifinales</h3>
+                        <p class="card-date"><i class="far fa-clock"></i> Ayer, 18:30</p>
+                        <p>Tras una emocionante serie, el quinteto local logra su pase a la siguiente ronda.</p>
+                        <a href="#" class="card-link">Leer completa</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="card-image">
+                        <img src="images/card4.jpg" alt="Noticia 4">
+                        <div class="card-category">Tenis</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Nuevo torneo internacional confirmado</h3>
+                        <p class="card-date"><i class="far fa-clock"></i> Ayer, 12:45</p>
+                        <p>El país será sede de un importante torneo ATP el próximo año con figuras mundiales.</p>
+                        <a href="#" class="card-link">Leer completa</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <h2 class="section-title">Video Destacado</h2>
+            <div class="video-container">
+                <div class="main-video">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
+                    <h3>Resumen: Final del torneo internacional</h3>
+                </div>
+                <div class="video-list">
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="images/video1.jpg" alt="Video 1">
+                            <div class="play-icon"><i class="fas fa-play"></i></div>
+                        </div>
+                        <h4>Mejores jugadas de la semana</h4>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="images/video2.jpg" alt="Video 2">
+                            <div class="play-icon"><i class="fas fa-play"></i></div>
+                        </div>
+                        <h4>Entrevista exclusiva con la estrella</h4>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="images/video3.jpg" alt="Video 3">
+                            <div class="play-icon"><i class="fas fa-play"></i></div>
+                        </div>
+                        <h4>Análisis táctico del último partido</h4>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-contenido">
-            <div class="footer-seccion">
-                <h3>Sobre Nosotros</h3>
-                <p>DeportesTotal es el portal líder en noticias deportivas desde 2010.</p>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-about">
+                    <img src="images/logo-white.png" alt="TotalSports Logo" class="footer-logo">
+                    <p>TotalSports es el portal deportivo líder en el país, brindando cobertura completa de todos los deportes desde 2005.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Secciones</h3>
+                    <ul>
+                        <li><a href="#">Fútbol</a></li>
+                        <li><a href="#">Básquet</a></li>
+                        <li><a href="#">Tenis</a></li>
+                        <li><a href="#">Atletismo</a></li>
+                        <li><a href="#">Más deportes</a></li>
+                        <li><a href="#">Resultados</a></li>
+                        <li><a href="#">Calendario</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Equipo</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Publicidad</a></li>
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir las últimas noticias en tu correo.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
             </div>
-            
-            <div class="footer-seccion">
-                <h3>Contacto</h3>
-                <p>Email: info@deportestotal.com</p>
-                <p>Teléfono: +123 456 789</p>
-            </div>
-            
-            <div class="footer-seccion">
-                <h3>Redes Sociales</h3>
-                <div class="sociales">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 TotalSports. Todos los derechos reservados.</p>
+                <div class="footer-payments">
+                    <img src="images/visa.png" alt="Visa">
+                    <img src="images/mastercard.png" alt="Mastercard">
+                    <img src="images/paypal.png" alt="PayPal">
                 </div>
             </div>
         </div>
-        
-        <div class="footer-copyright">
-            <p>&copy; 2023 DeportesTotal. Todos los derechos reservados.</p>
-        </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
