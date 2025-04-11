@@ -84,7 +84,7 @@ ul {
 }
 
 .nav-link:hover, .nav-link.active {
-    color: #e94560;
+    color: #4a45e9;
 }
 
 .dropdown-menu {
@@ -114,7 +114,7 @@ ul {
 
 .dropdown-menu li a:hover {
     background-color: #f5f5f5;
-    color: #e94560;
+    color: #4a45e9;
 }
 
 .search-box {
@@ -142,7 +142,7 @@ ul {
 
 /* Breaking news */
 .breaking-news {
-    background-color: #e94560;
+    background-color: #4a45e9;
     color: white;
     padding: 10px 0;
 }
@@ -209,7 +209,7 @@ ul {
     position: absolute;
     top: 20px;
     left: 20px;
-    background-color: #e94560;
+    background-color: #4a45e9;
     color: white;
     padding: 5px 15px;
     border-radius: 20px;
@@ -247,7 +247,7 @@ ul {
 }
 
 .read-more:hover {
-    color: #e94560;
+    color: #4a45e9;
 }
 
 .secondary-featured {
@@ -322,7 +322,7 @@ ul {
     left: 0;
     width: 60px;
     height: 3px;
-    background-color: #e94560;
+    background-color: #4a45e9;
 }
 
 .news-grid {
@@ -358,7 +358,7 @@ ul {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #e94560;
+    background-color: #4a45e9;
     color: white;
     padding: 3px 10px;
     border-radius: 20px;
@@ -391,7 +391,7 @@ ul {
 }
 
 .card-link {
-    color: #e94560;
+    color: #4a45e9;
     font-weight: bold;
     font-size: 0.9rem;
     display: inline-flex;
@@ -466,7 +466,7 @@ ul {
     transform: translate(-50%, -50%);
     width: 40px;
     height: 40px;
-    background-color: rgba(233, 69, 96, 0.8);
+    background-color: rgba(23, 45, 238, 0.8);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -531,7 +531,7 @@ ul {
 }
 
 .social-links a:hover {
-    background-color: #e94560;
+    background-color: #4a45e9;
     transform: translateY(-3px);
 }
 
@@ -549,7 +549,7 @@ ul {
     left: 0;
     width: 40px;
     height: 2px;
-    background-color: #e94560;
+    background-color: #4a45e9;
 }
 
 .footer-links ul li {
@@ -566,7 +566,7 @@ ul {
 
 .footer-links ul li a:hover {
     opacity: 1;
-    color: #e94560;
+    color: #4a45e9;
     padding-left: 5px;
 }
 
@@ -584,7 +584,7 @@ ul {
     left: 0;
     width: 40px;
     height: 2px;
-    background-color: #e94560;
+    background-color: #4a45e9;
 }
 
 .footer-newsletter p {
@@ -608,7 +608,7 @@ ul {
 }
 
 .newsletter-form button {
-    background-color: #e94560;
+    background-color:#4a45e9;
     color: white;
     border: none;
     padding: 0 20px;
@@ -619,7 +619,7 @@ ul {
 }
 
 .newsletter-form button:hover {
-    background-color: #d13354;
+    background-color: #4a45e9;
 }
 
 .footer-bottom {
